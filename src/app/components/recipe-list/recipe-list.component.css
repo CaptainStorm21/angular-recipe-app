@@ -1,0 +1,14 @@
+.borderStyle {
+    border: 2px solid lightblue;
+    font-weight: 700;
+    color: rgb(29, 25, 56);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-top: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+
+.borderStyle .headline {
+  background-color: whitesmoke;
+  padding: 10px;
+}

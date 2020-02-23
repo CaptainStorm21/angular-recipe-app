@@ -1,0 +1,32 @@
+<h3>this is alist of all avail recipes</h3>
+<div *ngFor="let recipe of recipes">
+  <app-recipe-summary [recipe]="recipe"></app-recipe-summary>
+</div>
+
+
+<div class="col-md-6 borderStyle">  
+  <div class="headline">
+  <h4 >Add a New Recipe</h4>
+</div>
+  <div class="form-group">
+    <label for="recipeTitle">Recipe Title</label>
+    <input type="text" class="form-control" [(ngModel)]="recipe_in_progress.title" placeHolder="What's your new recipe?"
+      name="title" />
+    <label for="prepTitle">Preparation Time</label>
+    <input type="text" class="form-control" [(ngModel)]="recipe_in_progress.preparation_time"
+      placeHolder="How long will it take?" name="preparationTime" />
+    <div class="form-group">
+      <label for="prepTitle">Feeds this many</label>
+      <input type="text" class="form-control" [(ngModel)]="recipe_in_progress.feed_this_many"
+        placeHolder="How many will your recipe feed?" name="preparationTime" />
+    </div>
+  </div>
+  <div class="form-group">
+    <label for="prepTitle">Description</label>
+    <textarea class="form-control" [(ngModel)]="recipe_in_progress.description"
+      placeHolder="Please tell us your steps.?" name="description" rows="3"></textarea>
+  </div>
+  <input type="button" 
+              value = "Add Recipe" 
+              (click)="addRecipeClicked()"/>
+</div>

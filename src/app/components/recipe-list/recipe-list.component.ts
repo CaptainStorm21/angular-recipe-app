@@ -59,6 +59,10 @@ export class RecipeListComponent {
     this.recipes.unshift(this.recipe_in_progress);
     //will blank out to a new recipe
     this.recipe_in_progress = Recipe.createBlank();
+  }
 
+  recipeZoomedIn(recipe: Recipe):void {
+    console.log("the user clicked");
+    console.log(JSON.stringify(recipe, null, 2))
   }
 }

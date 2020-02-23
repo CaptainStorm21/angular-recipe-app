@@ -1,2 +1,9 @@
 /* You can add global styles to this file, and also import other style files */
-@import '~bootstrap/dist/css/bootstrap.css';
+@import "~bootstrap/dist/css/bootstrap.css";
+
+.img image-style {
+  width: 150px;
+  height: 150px;
+  margin: 5px;
+  padding: 10px;
+}
